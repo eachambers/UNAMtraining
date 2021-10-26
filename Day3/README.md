@@ -7,3 +7,4 @@
   1. Installing iPyrad
   2. Making and editing params files
   3. Submitting jobs for processing
+* [In-class worksheet](): iPyrad on TACC
