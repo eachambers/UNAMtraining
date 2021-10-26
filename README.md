@@ -17,5 +17,5 @@ Calendar of events during your stay can be found here.
 | | 3.2 | Running iPyrad | 3t. iPyrad on TACC | [iPyrad CLI](https://ipyrad.readthedocs.io/en/latest/tutorial_intro_cli.html) |
 | **Day 4** | 4.1 | Phylogenetics |
 | | 4.2 | Trees on TACC | 4t. RAxML on TACC |
-| **Day 5** | 5.1 | Tidy data in R | 5t. tidyverse in R | tidyverse cheat sheet |
-| **Day 6** | 6.1 | Data visualization in R | 6t. ggplot and ggtree in R | ggplot cheat sheet |
+| **Day 5** | 5.1 | Tidy data in R | 5t. tidyverse in R | [tidyverse cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/tidydata-wrangling-cheatsheet.pdf) |
+| **Day 6** | 6.1 | Data visualization in R | 6t. ggplot and ggtree in R | [ggplot cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/ggplot2-cheatsheet.pdf) |
