@@ -6,4 +6,4 @@
     2. ddRAD conceptual methodology
     3. RADseq terminology
     4. How to design a RADseq study
-
+* [In-class worksheet](): Bash/CLI on TACC
