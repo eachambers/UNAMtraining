@@ -2,6 +2,8 @@
 
 In this course, we'll go from obtaining raw ddRADseq data to building basic phylogenies and data visualization. Many of these materials have been borrowed/modified from other existing materials. I always cite (or link, when applicable) the source of such materials.
 
+Calendar of events during your stay can be found here.
+
 **Course schedule and associated files:**
 
 | | Lecture | Lecture topic | In-class worksheet | Cheat sheets/relevant files |
