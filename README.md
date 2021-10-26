@@ -10,7 +10,7 @@ Calendar of events during your stay can be found here.
 | ----| -------- | ------------- | ------------ | ------ |
 | **Day 1** | 1.1 | Welcome | 
 | | 1.2 | RADseq basics | | [R. Tarvin Quito course 2017](https://rdtarvin.github.io/RADseq_Quito_2017/) |
-| | 1.3 | Working on TACC | 1t. Getting set up in TACC
+| | 1.3 | Working on TACC | 1t. Getting set up in TACC | TACC cheat sheet |
 | **Day 2** | 2.1 | RADseq bioinformatics |
 | | 2.2 | Introduction to bash/CLI | 2t. Bash/CLI on TACC
 | **Day 3** | 3.1 | Bioinformatics and iPyrad basics |
