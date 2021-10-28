@@ -7,3 +7,4 @@
   1. Installing and compiling RAxML
   2. Submitting trees as jobs
 * [In-class worksheet](): RAxML on TACC
+  1. [Link to in-class worksheet data]()
