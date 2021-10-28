@@ -7,3 +7,4 @@
   2. Extending the grammar of graphics to tree visualization
   3. Spatial data
 * [In-class worksheet](): ggplot and ggtree
+  1. [Link to in-class worksheet data]()
