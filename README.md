@@ -10,12 +10,12 @@ Calendar of events during your stay can be found here.
 | ----| -------- | ------------- | ------------ | ------ |
 | **Day 1** | 1.1 | Welcome | 
 | | 1.2 | RADseq basics | | [R. Tarvin Quito course 2017](https://rdtarvin.github.io/RADseq_Quito_2017/) |
-| | 1.3 | Introduction to bash/CLI | 1t. Bash/CLI basics | Bash cheat sheet |
+| | 1.3 | Introduction to bash/CLI | [1t. Bash/CLI basics](https://github.com/eachambers/UNAMtraining/tree/main/Day1) | Bash cheat sheet |
 | **Day 2** | 2.1 | RADseq bioinformatics |
-| | 2.2 | Introduction to TACC | 2t. Getting set up and running jobs in TACC | TACC cheat sheet |
+| | 2.2 | Introduction to TACC | [2t. Getting set up and running jobs in TACC](https://github.com/eachambers/UNAMtraining/tree/main/Day2) | TACC cheat sheet |
 | **Day 3** | 3.1 | Bioinformatics and iPyrad basics |
-| | 3.2 | Running iPyrad | 3t. iPyrad on TACC | [iPyrad CLI](https://ipyrad.readthedocs.io/en/latest/tutorial_intro_cli.html) |
+| | 3.2 | Running iPyrad | [3t. iPyrad on TACC](https://github.com/eachambers/UNAMtraining/tree/main/Day3) | [iPyrad CLI](https://ipyrad.readthedocs.io/en/latest/tutorial_intro_cli.html) |
 | **Day 4** | 4.1 | Phylogenetics |
-| | 4.2 | Trees on TACC | 4t. RAxML on TACC |
-| **Day 5** | 5.1 | Tidy data in R | 5t. tidyverse in R | [tidyverse cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/tidydata-wrangling-cheatsheet.pdf) |
-| **Day 6** | 6.1 | Data visualization in R | 6t. ggplot and ggtree in R | [ggplot cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/ggplot2-cheatsheet.pdf) |
+| | 4.2 | Trees on TACC | [4t. RAxML on TACC](https://github.com/eachambers/UNAMtraining/tree/main/Day4) |
+| **Day 5** | 5.1 | Tidy data in R | [5t. tidyverse in R](https://github.com/eachambers/UNAMtraining/tree/main/Day5) | [tidyverse cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/tidydata-wrangling-cheatsheet.pdf) |
+| **Day 6** | 6.1 | Data visualization in R | [6t. ggplot and ggtree in R](https://github.com/eachambers/UNAMtraining/tree/main/Day6) | [ggplot cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/ggplot2-cheatsheet.pdf) |
