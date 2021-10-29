@@ -9,6 +9,7 @@
 * [Bash/CLI basics]()
 * [1t: In-class worksheet](): Bash/CLI basics
     1. [Link to in-class worksheet data](https://utexas.box.com/s/qybj49agfq13556v00yj2dfhc7o40m1u)
+    2. [Link to advanced data](https://utexas.box.com/s/805qg0ezhfmhcsnc384h0x9or49ej5kr)
 * Course extras:
     1. [RADseq laboratory description](https://github.com/eachambers/UNAMtraining/blob/main/Day1/1.0_RADseq_laboratory.pdf)
     2. [Bash cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/Day1/bash_cheat_sheet.pdf)
