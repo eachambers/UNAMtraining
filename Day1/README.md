@@ -1,6 +1,6 @@
 # Day 1 materials
 
-* [1.1 General introduction to the course]()
+* [1.1 General introduction to the course](https://github.com/eachambers/UNAMtraining/blob/main/Day1/1.1_Welcome.pdf)
 * [1.2 RADseq conceptual information]():
     1. What is RADseq and why do it?
     2. ddRAD conceptual methodology
