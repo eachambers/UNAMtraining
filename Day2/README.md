@@ -1,6 +1,6 @@
 # Day 2 materials
 
-* [RADseq bioinformatics]():
+* [RADseq bioinformatics](https://github.com/eachambers/UNAMtraining/blob/main/Day2/2.1_RADseq_bioinformatics.pdf):
     1. Basics of RADseq data processing
 * [Supercomputer computing]():
     1. What is TACC?
