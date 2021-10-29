@@ -8,4 +8,4 @@
     4. How to design a RADseq study
 * [1t: In-class worksheet](): Bash/CLI basics
     1. [Link to in-class worksheet data](https://utexas.box.com/s/qybj49agfq13556v00yj2dfhc7o40m1u)
-* Course extras: [RADseq laboratory description]()
+* Course extras: [RADseq laboratory description](https://github.com/eachambers/UNAMtraining/blob/main/Day1/1.0_RADseq_laboratory.pdf)
