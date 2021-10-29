@@ -8,4 +8,4 @@
 * [In-class worksheet](): Getting set up on TACC
     1. [Link to in-class worksheet data]()
 * Course extras:
-    1. [TACC cheat sheet]()
+    1. [TACC cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/Day2/TACC_cheat_sheet.pdf)
