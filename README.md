@@ -8,7 +8,7 @@ Calendar of events during your stay can be found here.
 
 | | Lecture | Lecture topic | In-class worksheet | Cheat sheets/relevant files |
 | ----| -------- | ------------- | ------------ | ------ |
-| **Day 1** | 1.1 | [Welcome]() | 
+| **Day 1** | 1.1 | [Welcome](https://github.com/eachambers/UNAMtraining/blob/main/Day1/1.1_Welcome.pdf) | 
 | | 1.2 | RADseq basics | | [R. Tarvin Quito course 2017](https://rdtarvin.github.io/RADseq_Quito_2017/) |
 | | 1.3 | Introduction to bash/CLI | [1t. Bash/CLI basics](https://github.com/eachambers/UNAMtraining/tree/main/Day1) | [Bash cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/Day1/bash_cheat_sheet.pdf) |
 | **Day 2** | 2.1 | RADseq bioinformatics |
