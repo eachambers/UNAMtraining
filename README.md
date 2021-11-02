@@ -12,7 +12,7 @@ Calendar of events during your stay can be found here.
 | | 1.2 | [RADseq basics](https://github.com/eachambers/UNAMtraining/blob/main/Day1/1.2_RADseq_conceptual.pdf) | | [R. Tarvin Quito course 2017](https://rdtarvin.github.io/RADseq_Quito_2017/) |
 | | 1.3 | [Introduction to bash/CLI](https://github.com/eachambers/UNAMtraining/blob/main/Day1/1.3_Bash_intro.pdf) | [1t. Bash/CLI basics](https://github.com/eachambers/UNAMtraining/blob/main/Day1/1t_Bash_tutorial.docx) | [Bash cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/Day1/bash_cheat_sheet.pdf) |
 | **Day 2** | 2.1 | [RADseq bioinformatics](https://github.com/eachambers/UNAMtraining/blob/main/Day2/2.1_RADseq_bioinformatics.pdf) |
-| | 2.2 | Introduction to TACC | [2t. Getting set up and running jobs in TACC]() | [TACC cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/Day2/TACC_cheat_sheet.pdf) |
+| | 2.2 | [Introduction to TACC](https://github.com/eachambers/UNAMtraining/blob/main/Day2/2.2_TACC_tutorial.pdf) | [2t. Getting set up and running jobs in TACC]() | [TACC cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/Day2/TACC_cheat_sheet.pdf) |
 | **Day 3** | 3.1 | Bioinformatics and iPyrad basics |
 | | 3.2 | Running iPyrad | [3t. iPyrad on TACC](https://github.com/eachambers/UNAMtraining/tree/main/Day3) | [iPyrad CLI](https://ipyrad.readthedocs.io/en/latest/tutorial_intro_cli.html) |
 | **Day 4** | 4.1 | Phylogenetics |
