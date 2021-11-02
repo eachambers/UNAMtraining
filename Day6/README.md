@@ -1,5 +1,7 @@
 # Day 6 materials
 
+## Monday, November 15 (4-5:30PM in WEL3.314 and virtually [here](https://utexas.zoom.us/j/94251874050))
+
 *Some of these materials are adapted from course materials from **Dr. Claus Wilke**, which can be found [here]()*
 
 * [Data visualization in R]():
