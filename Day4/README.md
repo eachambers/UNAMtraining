@@ -1,5 +1,7 @@
 # Day 4 materials
 
+## Thursday, November 11 (1-3PM in WEL3.314)
+
 * [Phylogenetics]():
   1. Tree-building
   2. Other stuff?
