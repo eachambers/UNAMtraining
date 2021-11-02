@@ -1,5 +1,7 @@
 # Day 3 materials
 
+## Wednesday, November 10 (9-11AM in WEL3.318)
+
 * [iPyrad basics]():
   1. How does iPyrad work? Basic steps
   2. Assembly parameters
