@@ -2,7 +2,7 @@
 
 ## Wednesday, November 10 (9-11AM in WEL3.318)
 
-* [iPyrad basics]():
+* [iPyrad basics](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3.1_iPyrad_tutorial.pdf):
   1. How does iPyrad work? Basic steps
   2. Assembly parameters
 * [Running iPyrad on TACC]():
