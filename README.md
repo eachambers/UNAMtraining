@@ -14,7 +14,7 @@ Calendar of events during your stay can be found here.
 | **Day 2** | 2.1 | [RADseq bioinformatics](https://github.com/eachambers/UNAMtraining/blob/main/Day2/2.1_RADseq_bioinformatics.pdf) |
 | | 2.2 | [Introduction to TACC](https://github.com/eachambers/UNAMtraining/blob/main/Day2/2.2_TACC_tutorial.pdf) | [2t. Getting set up and running jobs in TACC](https://github.com/eachambers/UNAMtraining/blob/main/Day2/2t_TACC_tutorial_walkthrough.docx) | [TACC cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/Day2/TACC_cheat_sheet.pdf) |
 | **Day 3** | 3.1 | Bioinformatics and iPyrad basics |
-| | 3.2 | Running iPyrad | [3t. iPyrad on TACC](https://github.com/eachambers/UNAMtraining/tree/main/Day3) | [iPyrad CLI](https://ipyrad.readthedocs.io/en/latest/tutorial_intro_cli.html) |
+| | 3.2 | [Running iPyrad](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3.2_iPyrad_howto.pdf) | [3t. iPyrad on TACC](https://github.com/eachambers/UNAMtraining/tree/main/Day3) | [iPyrad CLI](https://ipyrad.readthedocs.io/en/latest/tutorial_intro_cli.html) |
 | **Day 4** | 4.1 | Phylogenetics |
 | | 4.2 | Trees on TACC | [4t. RAxML on TACC](https://github.com/eachambers/UNAMtraining/tree/main/Day4) |
 | **Day 5** | 5.1 | Tidy data in R | [5t. tidyverse in R](https://github.com/eachambers/UNAMtraining/tree/main/Day5) | [tidyverse cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/tidydata-wrangling-cheatsheet.pdf) |
