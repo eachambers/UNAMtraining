@@ -2,7 +2,7 @@
 
 ## Thursday, November 11 (1-3PM in WEL3.314)
 
-* [Phylogenetics]():
+* [Phylogenetics](https://github.com/eachambers/UNAMtraining/blob/main/Day4/4.1_RADseq_phylo.pdf):
   1. Tree-building
   2. Other stuff?
 * [Building trees on TACC]():
