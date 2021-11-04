@@ -2,7 +2,7 @@
 
 ## Friday, November 12 (9-11AM in WEL3.314)
 
-* [Tidy data in R]():
+* [Tidy data in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.1_tidyr.pdf):
   1. What is the philosophy behind tidy data?
   2. Gather/spread
   3. Additional functions within the tidyverse
