@@ -8,3 +8,4 @@
   3. Additional functions within the tidyverse
 * [In-class worksheet](): tidyverse in R
   1. [Link to in-class worksheet data](https://utexas.box.com/s/03xrlwixyoxmxtpxnlhx6oz6gbap8ice)
+* From now on, we'll be doing worksheets in R markdown. See [here]() for an example of how this works.
