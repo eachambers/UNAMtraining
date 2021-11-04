@@ -9,5 +9,7 @@
   1. Installing iPyrad
   2. Making and editing params files
   3. Submitting jobs for processing
+* [iPyrad results](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3.3_iPyrad_results.pdf):
+  1. Going through output stats files from iPyrad's seven steps
 * [In-class worksheet](): iPyrad on TACC
   1. [Link to in-class worksheet data]()
