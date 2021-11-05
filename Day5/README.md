@@ -13,6 +13,6 @@
   3. Phylo objects
   4. Example geoms in ggtree for phylo trees
 * [In-class worksheet](): ggplot and ggtree
-  1. [Link to in-class worksheet data]()
+  1. [Link to in-class worksheet data](https://utexas.box.com/s/82sgrvghrc4m2262heav7ak50310cmhd)
 * From now on, we'll be doing worksheets in R markdown. See [here](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.0_Example_markdown.Rmd) for an example of how this works.
 * [ggplot cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/ggplot2-cheatsheet.pdf)
