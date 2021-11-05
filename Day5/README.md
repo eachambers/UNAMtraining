@@ -2,7 +2,7 @@
 
 ## Friday, November 12 (9-11AM in WEL3.314)
 
-*Some of these materials are adapted from course materials from **Dr. Claus Wilke**, which can be found [here]()*
+*Some of these materials are adapted from course materials from **Dr. Claus Wilke**, which can be found [here](https://wilkelab.org/classes/).*
 
 * [Data visualization in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.1_ggplot.pdf):
   1. Basics of ggplot: aesthetic mapping
