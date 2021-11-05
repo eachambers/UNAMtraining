@@ -1,0 +1,130 @@
+---
+title: "Working with data (tidyr and dplyr)"
+author: "E. Anne Chambers"
+output:
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+# Prevent warning and messages from displaying in the pdf of this document
+knitr::opts_chunk$set(message = FALSE, warning=FALSE)
+```
+
+Download the files relevant for Day 6 exercises (found [here](https://utexas.box.com/s/03xrlwixyoxmxtpxnlhx6oz6gbap8ice)), unzip the folder, and move it to the folder that this current file is in. The first thing we always need to do for running R is to load (or install) any packages or dependencies and set our current working directory.
+```{r}
+# install.packages("tidyverse") # you'll only have to do this once
+library(tidyverse)
+setwd() # set this to whichever directory has this markdown file and associated data files are downloaded to
+```
+
+## Exercise 1: Spreading and gathering
+
+Let's first take a look at the Exercise 1 dataset which we'll call `lampro`. This is a fake Structure-style output for k=2 clusters.
+```{r}
+# read in a tab-separated file:
+lampro = read_tsv("Day6_tidyr_worksheet_files/exercise1_lampro.txt", col_names = TRUE)
+# get acquainted with the dataframe:
+head(lampro)
+```
+
+1. Is `lampro` an example of a tidy dataset? If not, how could you use `gather` or `spread` to make it tidy?
+```{r}
+# your code here
+```
+
+2. Now, reverse what you've just done above by using the opposite function.
+
+```{r}
+# your code here
+```
+
+## Exercise 2: 
+
+The `quakes` dataset describes the number of earthquakes observed at stations around Fiji.
+
+```{r}
+data(quakes)
+# first get acquainted with the dataframe:
+head(quakes)
+```
+
+1. Make a new dataset that adds a column to `quakes` that shows the magnitude of the earthquake divided by the maximum magnitude earthquake ever experienced (which is 6.4).
+```{r}
+#your code here
+```
+
+2. Print a dataframe that shows only the earthquakes that were less than (or equal to) 100m deep. Working off your code, count how many there were.
+```{r}
+#your code here
+```
+
+3. How many earthquakes greater than 4.5 magnitude were there at each station?
+```{r}
+# your code here
+```
+
+4. The capital of Fiji is Suva, located at (-18.1, 178.5). Which earthquakes were within 0.1 decimal degrees of the city's LONGITUDE? How many were there? How many of these were of a magnitude that was higher than 5?
+```{r}
+# your code here
+```
+
+5. Make a new dataframe that only has the station, the mean magnitude, and the mean depth at each station. Arrange the dataframe in ascending station number. (Make this trickier by removing any duplicate rows).
+```{r}
+# your code here
+```
+
+## Advanced tidyverse: integrating tidyr with ggplot
+
+We can actually use pipes to process data and input these data directly into ggplot! Let's use some of the skills you've acquired above and the *Rana* data from Day 5 to build some interesting plots.
+
+1. Read in the `rana_stats.txt` file from Day 5 and save it as `stats`.
+```{r}
+# your code here
+```
+
+2. Now, *in a single line of code*, make a new column in the `stats` dataframe called `prop_loci` that is the proportion of loci that each sample has divided by the total number of loci in the entire assembly (20486) and build a plot with points where samples are on the x axis and proportion of loci is on the y axis and colored according to `prop_loci` (hint: Because we're feeding in `stats` already, you don't need to include it again within the `ggplot()` function). Remove the x axis labels, ticks, and title. 
+```{r}
+# your code here
+```
+
+3. Export your plot as a PDF.
+```{r}
+# your code here
+```
+
+## Advanced tidyverse: integrating tidyr with ggtree
+
+1. Import the `ranaddrad_tree.nexus` file as you did on Day 5.
+```{r}
+# your code here
+```
+
+2. Root the tree at node 21 so that *R. chiricahuensis* is the outgroup clade.
+```{r}
+# your code here
+```
+
+3. Build a tree plot with tip labels and a scale.
+```{r}
+# your code here
+```
+
+4. What is the maximum number of consensus reads in any given sample?
+```{r}
+# your code here
+```
+
+5. Now, *in a single line of code*, make a new column in the `stats` dataframe called `prop_reads` that is the proportion of consensus reads that each sample has divided by the maximum number of reads across all the samples.
+```{r}
+# your code here
+```
+
+6. Add the `prop_reads` for each sample as colored tips on the phylogeny.
+```{r}
+# your code here
+```
+
+7. Export your new tree plot as a PDF.
+```{r}
+# your code here
+```
