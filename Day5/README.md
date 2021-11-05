@@ -4,7 +4,7 @@
 
 *Some of these materials are adapted from course materials from **Dr. Claus Wilke**, which can be found [here]()*
 
-* [Data visualization in R]():
+* [Data visualization in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.1_ggplot.pdf):
   1. Basics of ggplot: aesthetic mapping
   2. ggplot examples
 * [ggtree in R]():
