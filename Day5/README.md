@@ -7,7 +7,7 @@
 * [Data visualization in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.1_ggplot.pdf):
   1. Basics of ggplot: aesthetic mapping
   2. ggplot examples
-* [ggtree in R]():
+* [ggtree in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.2_ggtree.pdf):
   1. Extending the ggplot to tree visualization in ggtree
   2. Example aesthetics for phylogenetic trees
   3. Phylo objects
