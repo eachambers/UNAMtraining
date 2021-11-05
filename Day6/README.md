@@ -8,3 +8,4 @@
   3. Additional functions within the tidyverse
 * [In-class worksheet](https://github.com/eachambers/UNAMtraining/blob/main/Day6/6t_tidydata.Rmd): tidyverse in R
   1. [Link to in-class worksheet data](https://utexas.box.com/s/03xrlwixyoxmxtpxnlhx6oz6gbap8ice)
+* [tidyverse cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/tidydata-wrangling-cheatsheet.pdf)
