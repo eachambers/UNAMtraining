@@ -16,6 +16,6 @@ In this course, we'll go from obtaining raw ddRADseq data to building basic phyl
 | | 3.3 | [iPyrad results](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3.3_iPyrad_results.pdf) | |
 | **Day 4** | 4.1 | [Phylogenetics](https://github.com/eachambers/UNAMtraining/blob/main/Day4/4.1_RADseq_phylo.pdf) |
 | | 4.2 | [Trees on TACC](https://github.com/eachambers/UNAMtraining/blob/main/Day4/4.2_RAxML_howto.pdf) | [4t. RAxML on TACC](https://github.com/eachambers/UNAMtraining/blob/main/Day4/4t_Phylo_tutorial.docx) |
-| **Day 5** | 5.1 | [Data visualization in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.1_ggplot.pdf) | 5t. [ggplot and ggtree in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.2_ggtree.pdf) | [ggplot cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/ggplot2-cheatsheet.pdf) |
-| | 5.2 | Extending ggplot to ggtree | |
+| **Day 5** | 5.1 | [Data visualization in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.1_ggplot.pdf) | 5t. [ggplot and ggtree in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5t_Data_visualization.Rmd) | [ggplot cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/ggplot2-cheatsheet.pdf) |
+| | 5.2 | [Extending ggplot to ggtree](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.2_ggtree.pdf) | |
 | **Day 6** | 6.1 | [Tidy data in R](https://github.com/eachambers/UNAMtraining/blob/main/Day6/6.1_tidyr.pdf) | [6t. tidyverse in R](https://github.com/eachambers/UNAMtraining/blob/main/Day6/6t_tidydata.Rmd) | [tidyverse cheat sheet](https://github.com/eachambers/UNAMtraining/blob/main/misc/tidydata-wrangling-cheatsheet.pdf) |
