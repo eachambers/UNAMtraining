@@ -1,6 +1,6 @@
 # Day 2 materials
 
-## Tuesday, November 9 (1-3PM in WEL3.314)
+## Tuesday, November 9 (1:30-3PM in WEL3.314)
 
 * [RADseq bioinformatics](https://github.com/eachambers/UNAMtraining/blob/main/Day2/2.1_RADseq_bioinformatics.pdf):
     1. Basics of RADseq data processing
