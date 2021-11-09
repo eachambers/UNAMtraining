@@ -1,6 +1,6 @@
 # Day 4 materials
 
-## Thursday, November 11 (1-3PM in WEL3.314)
+## Thursday, November 11 (1:30-3:30PM in WEL3.314)
 
 * [Phylogenetics](https://github.com/eachambers/UNAMtraining/blob/main/Day4/4.1_RADseq_phylo.pdf):
   1. Tree-building
