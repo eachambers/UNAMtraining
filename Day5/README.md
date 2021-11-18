@@ -1,7 +1,5 @@
 # Day 5 materials
 
-## Friday, November 12 (2:30-4:30PM in WEL3.314)
-
 *Some of these materials are adapted from course materials from **Dr. Claus Wilke**, which can be found [here](https://wilkelab.org/classes/).*
 
 * [Data visualization in R](https://github.com/eachambers/UNAMtraining/blob/main/Day5/5.1_ggplot.pdf):
