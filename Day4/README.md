@@ -11,3 +11,4 @@
   2. Output files from RAxML-ng
 * [In-class worksheet](https://github.com/eachambers/UNAMtraining/blob/main/Day4/4t_Phylo_tutorial.docx): RAxML on TACC
   1. [Link to Day 3 iPyrad output files](https://utexas.box.com/s/t8mzcysfy4enxjrq93qibg5ip6saw5fp)
+  2. [Link to Day 4 RAxML-ng output files](https://utexas.box.com/s/m7fuv6po4edwqi2k2ak9r7p7i9atwdj8)
