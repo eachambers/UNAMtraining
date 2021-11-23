@@ -10,5 +10,5 @@
 * [iPyrad results](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3.3_iPyrad_results.pdf):
   1. Going through output stats files from iPyrad's seven steps
   2. What do the most relevant iPyrad output files look like? (.loci, .vcf)
-* [In-class worksheet](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3t_iPyrad_tutorial.docx): iPyrad on TACC
+* [In-class worksheet](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3t_iPyrad_tutorial.docx): iPyrad on TACC *(answers are [here](https://github.com/eachambers/UNAMtraining/blob/main/Day3/3t_iPyrad_tutorial_ANSWERS.pdf))*
   1. [Link to advanced iPyrad output files](https://utexas.box.com/s/t8mzcysfy4enxjrq93qibg5ip6saw5fp)
