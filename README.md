@@ -2,8 +2,6 @@
 
 In this course, we'll go from obtaining raw ddRADseq data to building basic phylogenies and data visualization. Many of these materials have been borrowed/modified from other existing materials. I always cite (or link, when applicable) the source of such materials.
 
-**Tue Nov 23 1:30-3PM** Zoom link [here](https://utexas.zoom.us/j/92943326257)
-
 **Mon Nov 29 4-5:30PM** Zoom link [here](https://utexas.zoom.us/j/93811172133)
 
 **Course schedule and associated files:**
