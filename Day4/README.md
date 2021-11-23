@@ -10,3 +10,4 @@
   1. Example calls to RAxML-ng on TACC
   2. Output files from RAxML-ng
 * [In-class worksheet](https://github.com/eachambers/UNAMtraining/blob/main/Day4/4t_Phylo_tutorial.docx): RAxML on TACC
+  1. [Link to Day 3 iPyrad output files](https://utexas.box.com/s/t8mzcysfy4enxjrq93qibg5ip6saw5fp)
