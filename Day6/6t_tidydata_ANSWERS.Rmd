@@ -28,14 +28,30 @@ head(lampro)
 ```
 
 1. Is `lampro` an example of a tidy dataset? If not, how could you use `gather` or `spread` to make it tidy?
+
+*No, the `lampro` dataset isn't tidy because there are multiple observations (k values) for each row (sample).*
+
 ```{r}
-# your code here
+# Spread the data using k values as the key and making a new column with k proportions
+new <-
+  lampro %>% 
+  gather(key = cluster, value = proportion, 2:3)
+
+# gather and spread were recently deprecated (i.e., are being phased out), so it's best to now use `pivot_longer` and `pivot_wider`:
+new <-
+  lampro %>% 
+  pivot_longer(cols = 2:3, names_to = "cluster", values_to = "proportion")
 ```
 
 2. Now, reverse what you've just done above by using the opposite function.
 
 ```{r}
-# your code here
+new %>% 
+  spread(key = cluster, value = proportion)
+
+# gather and spread were recently proportion# gather and spread were recently deprecated (i.e., are being phased out), so it's best to now use `pivot_longer` and `pivot_wider`:
+new %>% 
+  pivot_wider(names_from = cluster, values_from = proportion)
 ```
 
 ## Exercise 2: 
@@ -50,27 +66,65 @@ head(quakes)
 
 1. Make a new dataset that adds a column to `quakes` that shows the magnitude of the earthquake divided by the maximum magnitude earthquake ever experienced (which is 6.4).
 ```{r}
-#your code here
+new_quakes <-
+  quakes %>% 
+  mutate(prop_max = mag/6.4)
+
+# If we didn't know what the max was, we could find out by doing:
+max(quakes$mag)
+
+# Or, we could do everything in one go! Like so:
+new_quakes <-
+  quakes %>% 
+  mutate(prop_max = mag / max(mag))
 ```
 
 2. Print a dataframe that shows only the earthquakes that were less than (or equal to) 100m deep. Working off your code, count how many there were.
 ```{r}
-#your code here
+quakes %>% 
+  filter(depth <= 100) %>% 
+  count() # can also do summarize(n()) here too
+
+# We could check that this worked by doing:
+quakes %>% 
+  filter(depth <= 100) %>% 
+  summarize(max(depth))
 ```
 
 3. How many earthquakes greater than 4.5 magnitude were there at each station?
 ```{r}
-# your code here
+quakes %>% 
+  filter(mag > 4.5) %>% 
+  count()
 ```
 
 4. The capital of Fiji is Suva, located at (-18.1, 178.5). Which earthquakes were within 0.1 decimal degrees of the city's LONGITUDE? How many were there? How many of these were of a magnitude that was higher than 5?
 ```{r}
-# your code here
+quakes %>% 
+  filter(long >= 178.4 & long <= 178.6)
+
+quakes %>% 
+  filter(long >= 178.4 & long <= 178.6) %>% 
+  count() # there were 8 earthquakes within 0.1 decimal degrees.
+
+quakes %>% 
+  filter(long >= 178.4 & long <= 178.6) %>% 
+  filter(mag > 5) %>% 
+  count() # there were 3 earthquakes with magnitudes greater than 5.
 ```
 
 5. Make a new dataframe that only has the station, the mean magnitude, and the mean depth at each station. Arrange the dataframe in ascending station number. (Make this trickier by removing any duplicate rows).
 ```{r}
-# your code here
+means <-
+  quakes %>% 
+  group_by(stations) %>%
+  # Calculate mean for each station
+  mutate(mean_mag = mean(mag),
+         mean_depth = mean(depth)) %>% 
+  # Only keep relevant columns
+  dplyr::select(stations, mean_mag, mean_depth) %>% 
+  distinct() %>% 
+  arrange(stations)
 ```
 
 ## Advanced tidyverse: integrating tidyr with ggplot
@@ -79,52 +133,73 @@ We can actually use pipes to process data and input these data directly into ggp
 
 1. Read in the `rana_stats.txt` file from Day 5 (it's within the Day 6 directory too) and save it as `stats`.
 ```{r}
-# your code here
+stats <- read_tsv(here("data", "Day6_tidyr_worksheet_files/rana_stats.txt"))
 ```
 
 2. Now, *in a single line of code*, make a new column in the `stats` dataframe called `prop_loci` that is the proportion of loci that each sample has divided by the total number of loci in the entire assembly (20486) and build a plot with points where samples are on the x axis and proportion of loci is on the y axis and colored according to `prop_loci` (hint: Because we're feeding in `stats` already, you don't need to include it again within the `ggplot()` function). Remove the x axis labels, ticks, and title. 
 ```{r}
-# your code here
+stats %>% 
+  mutate(prop_loci = loci_in_assembly / 20486) %>% 
+  ggplot(aes(x = sample_ID, y = prop_loci, color = sample_ID)) +
+  geom_point() +
+  theme(axis.title.x = element_blank(),
+        axis.text.x = element_blank(),
+        axis.ticks.x = element_blank())
 ```
 
 3. Export your plot as a PDF.
-```{r}
-# your code here
+```
+ggsave(here("props_loci.pdf"))
 ```
 
 ## Advanced tidyverse: integrating tidyr with ggtree
 
 1. Import the `ranaddrad_tree.nexus` file as you did on Day 5.
 ```{r}
-# your code here
+library(ape)
+library(ggtree)
+tree <- read.nexus(here("data", "ranaddrad_tree.nexus"))
 ```
 
 2. Root the tree at node 21 so that *R. chiricahuensis* is the outgroup clade.
 ```{r}
-# your code here
+rooted_tree <- root(tree, node = 21, edgelabel = TRUE)
 ```
 
 3. Build a tree plot with tip labels and a scale.
 ```{r}
-# your code here
+tree_plot <-
+  ggtree(rooted_tree) +
+  geom_tiplab() +
+  theme(legend.position = "bottom") +
+  geom_treescale()
+tree_plot
 ```
 
 4. What is the maximum number of consensus reads in any given sample?
 ```{r}
-# your code here
+stats %>% 
+  summarize(max(reads_consens))
+
+# You could also do:
+max(stats$reads_consens)
 ```
 
 5. Now, *in a single line of code*, make a new column in the `stats` dataframe called `prop_reads` that is the proportion of consensus reads that each sample has divided by the maximum number of reads across all the samples.
 ```{r}
-# your code here
+stats <-
+  stats %>% 
+  mutate(prop_reads = reads_consens / max(reads_consens))
 ```
 
 6. Add the `prop_reads` for each sample as colored tips on the phylogeny.
 ```{r}
-# your code here
+tree_plot %<+%
+  stats +
+  geom_tippoint(aes(color = prop_reads), size = 2)
 ```
 
 7. Export your new tree plot as a PDF.
-```{r}
-# your code here
+```
+ggsave(here("prop_reads_plot.pdf"))
 ```

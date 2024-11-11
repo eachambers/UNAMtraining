@@ -42,7 +42,11 @@ ggplot(stats, aes(x = sample_ID, y = loci_in_assembly)) +
 2. Color each data point by sample ID and remove the x axis labels (by adding the following) because they're now redundant.
 `theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank())`
 ```{r}
-# your code here
+ggplot(stats, aes(x = sample_ID, y = loci_in_assembly, color = sample_ID)) +
+  geom_point() +
+  theme(axis.title.x = element_blank(), 
+        axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank())
 ```
 
 ## Exercise 1b: ggplot basics
@@ -51,17 +55,23 @@ Let's take a look at amounts of missing data now. There is another file in the d
 
 1. Import the `rana_missing_data.txt` file as you did the stats file above and call it `missing`. Take a look at the file contents.
 ```{r}
-# your code here
+missing <- read_tsv(here("data", "rana_missing_data.txt"))
+missing
 ```
 
 2. Make a **bar plot** with percentage of missing data on the y-axis vs. sample ID on the x-axis.
 ```{r}
-# your code here
+ggplot(missing, aes(x = sample_ID, y = percent_missing)) +
+  geom_col()
 ```
 
 3. Outline AND fill the bars (two separate functions, see if you can figure this out on your own) according to sample ID and remove the x axis labels, title, and ticks as you did in 1a.
 ```{r}
-# your code here
+ggplot(missing, aes(x = sample_ID, y = percent_missing, color = sample_ID, fill = sample_ID)) +
+  geom_col() +
+  theme(axis.title.x = element_blank(), 
+        axis.text.x = element_blank(), 
+        axis.ticks.x = element_blank())
 ```
 
 ## Exercise 2: ggtree basics
@@ -82,7 +92,7 @@ tree$Nnode
 
 1. How do you take a look at the taxon names of this tree?
 ```{r}
-# your code here
+tree$tip.label
 ```
 
 Run the following code, which builds a tree in `ggtree` with the absolute minimum amount of labeling.
@@ -95,12 +105,15 @@ What does this tree look like? What is it missing?
 
 2. Add tip labels to this tree using the `geom_tiplab()` function within `ggtree`.
 ```{r}
-# your code here
+ggtree(tree) +
+  geom_tiplab()
 ```
 
 3. You may have noticed that the rooting of this tree is incorrect. We need to reroot the tree before proceeding, but first we need to figure out which node to reroot the tree at (the one that is the common ancestor of all *R. chiricahuensis* individuals) using its *node number*. Working off your tree from 2. and using the `geom_text()` function within `ggtree`,  plot node numbers on the tree you built. You will have to specify the aes.
 ```{r}
-# your code here
+ggtree(tree) +
+  geom_tiplab() +
+  geom_text(aes(label = node))
 ```
 
 Which node should you reroot at according to your above tree?
@@ -108,37 +121,56 @@ Which node should you reroot at according to your above tree?
 
 4. Now, reroot the tree at the correct node. We can do this using the `root()` function within `ape` with the syntax `rooted_tree <- root(tree, node=X, edgelabel=TRUE)`. `edgelabel` retains the branch lengths.
 ```{r}
-# your code here
+rooted_tree <- root(tree,
+                    node = 21,
+                    edgelabel = TRUE)
 ```
 
 5. Rerun the code from 2. but for the new tree. Is the new tree rooted correctly?
 ```{r}
-# your code here
+ggtree(rooted_tree) +
+  geom_tiplab() # yes, tree is now rooted correctly
 ```
 
 6. Working off the tree above, also add on node labels that are the bootstrap support values using the `geom_text` function within `ggtree`. The labeling should be `label`.
 ```{r}
-# your code here
+ggtree(rooted_tree) +
+  geom_tiplab() +
+  geom_text(aes(label = label))
 ```
 
 7. There's a lot going on in the above tree and it's hard to make out the BS values. Rebuild the tree instead with points at the nodes of the tree (using `geom_nodepoint`) that are colored according to bootstrap support value. Specify coloring by `label` (within the aesthetic) and make the size of the points be 2.
 ```{r}
-# your code here
+ggtree(rooted_tree) +
+  geom_tiplab() +
+  geom_nodepoint(aes(label = label, color = label), size = 2)
 ```
 
 8. Specify the colors for the bootstrap node points by using the `scale_color_manual(values=c("color1", "color2", "color3"))` function. There are three different values for the bootstrap support so you'll need to provide three different color names. Examples of R color names can be found [here](http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf).
 ```{r}
-# your code here
+ggtree(rooted_tree) +
+  geom_tiplab() +
+  geom_nodepoint(aes(label = label, color = label), size = 2) +
+  scale_color_manual(values = c("coral1", "darkblue", "cornflowerblue"))
 ```
 
 9. The legend with the bootstrap colors is obscuring some of your tip labels. We can move the legend around using the exact same function as in normal `ggplot()`, which is the function `theme()`. Add on `theme(legend.position="bottom")`
 ```{r}
-# your code here
+ggtree(rooted_tree) +
+  geom_tiplab() +
+  geom_nodepoint(aes(label = label, color = label), size = 2) +
+  scale_color_manual(values = c("coral1", "darkblue", "cornflowerblue")) +
+  theme(legend.position = "bottom")
 ```
 
 10. Finally, add a scale bar to the plot using the `geom_treescale` function within `ggtree`. Save this visualization as `plot_tree`.
 ```{r}
-# your code here
+ggtree(rooted_tree) +
+  geom_tiplab() +
+  geom_nodepoint(aes(label = label, color = label), size = 2) +
+  scale_color_manual(values = c("coral1", "darkblue", "cornflowerblue")) +
+  theme(legend.position = "bottom") +
+  geom_treescale()
 ```
 
 11. You can export your tree in a few ways, but we'll use the `ggsave` function within `ggplot2`. This will save the PDF to your current working directory.
@@ -154,10 +186,16 @@ Within `ggtree()`, we can actually plot other data on top of our existing tree. 
 
 1. Using your properly rooted phylo object (`rooted_tree`), build a new tree plot without any information at the nodes (labels or node points). Name this `tree_nonodes`.
 ```{r}
-# your code here
+tree_nonodes <-
+  ggtree(rooted_tree) +
+  geom_tiplab() +
+  theme(legend.position = "bottom") +
+  geom_treescale()
 ```
 
 2. Using the `missing` dataframe, add this on to your existing tree plot (`tree_nonodes`) and add tip points using `geom_tippoint()`. Fill the points by percentage missing data and give them a size of 2.
 ```{r}
-# your code here
+tree_nonodes %<+%
+  missing +
+  geom_tippoint(aes(color = percent_missing), size = 2)
 ```
